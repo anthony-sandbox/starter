@@ -11,6 +11,7 @@ app.listen(port, host, (err)=>{
     if(err){
         console.log(err);
     } else {
-        open("http://" + host + ":8081");
+        //open("http://" + host + ":8081");
+        console.log("Server listening on " + host + ":" + port);
     }
 });

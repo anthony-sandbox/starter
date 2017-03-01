@@ -13,9 +13,9 @@
     "build:html": "npm-run-all -p bsReload",
     "build": "npm-run-all build:css:src bsReload",
     "build:css:src": "node-sass src/sass/style.scss | postcss -u postcss-font-magician -u postcss-cssnext -o src/public/css/style.css",
-    "localtunnel": "lt --port 8080 --subdomain starter",
-    "browserSync": "browser-sync start --port 8081 --proxy 0.0.0.0:8080",
-    "bsReload": "browser-sync reload --port 8081"
+    "localtunnel": "lt --port 8081 --subdomain starter",
+    "browserSync": "browser-sync start --port 8080 --proxy 0.0.0.0:8081",
+    "bsReload": "browser-sync reload --port 8080"
   },
   "keywords": [],
   "author": "Anthony <anthony.turrigiano@gmail.com>",
@@ -26,6 +26,7 @@
     "babel-preset-latest": "^6.22.0",
     "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.18.8",
+    "dotenv": "^4.0.0",
     "localtunnel": "^1.8.2",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.2",
@@ -36,6 +37,8 @@
     "postcss-cli": "^3.0.0-beta",
     "postcss-cssnext": "^2.9.0",
     "postcss-font-magician": "^1.6.0",
+    "pug": "^2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6",
     "purifycss": "^1.1.9"
   },
   "dependencies": {
